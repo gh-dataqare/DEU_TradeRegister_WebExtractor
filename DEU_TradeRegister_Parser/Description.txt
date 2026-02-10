@@ -1,0 +1,220 @@
+
+
+1. Registartion data of company.
+
+  1.1. Local Court Id where this company is registered
+       (for example: "D2601V".
+	 Here we should get the real name of registartion court from an XML comment
+         (for exmaple: "<!--Registergericht Amtsgericht München-->")):
+
+         "/tns:nachricht.reg.0400003/tns:grunddaten/tns:verfahrensdaten/tns:instanzdaten/tns:auswahl_instanzbehoerde/tns:gericht/code"
+
+
+  1.2. Type of register
+       (for example: "HRB"):
+
+         "/tns:nachricht.reg.0400003/tns:grunddaten/tns:verfahrensdaten/tns:instanzdaten/tns:aktenzeichen/tns:auswahl_aktenzeichen/tns:aktenzeichen.strukturiert/tns:register/code"
+
+
+  1.3. Registration number
+       (for example: "116828"):
+
+         "/tns:nachricht.reg.0400003/tns:grunddaten/tns:verfahrensdaten/tns:instanzdaten/tns:aktenzeichen/tns:auswahl_aktenzeichen/tns:aktenzeichen.strukturiert/tns:laufendeNummer"
+
+
+
+2. List of persons who are involved in management of this company
+   (I.e. list of nodes with the following name,
+    where each node represents an individual person):
+
+     "/tns:nachricht.reg.0400003/tns:grunddaten/tns:verfahrensdaten/tns:beteiligung/tns:beteiligter"
+
+
+
+  2.1. Personal fileds.
+
+    2.1.1. Link to second part of this XML document,
+	       that contains description of powers for aech person
+	       (i.e. it is link to: "/tns:nachricht.reg.0400003/tns:fachdatenRegister/tns:basisdatenRegister/tns:vertretung/tns:vertretungsberechtigte/tns:ref.rollennummer"):
+
+             "/tns:nachricht.reg.0400003/tns:grunddaten/tns:verfahrensdaten/tns:beteiligung/tns:rolle/tns:rollennummer"
+
+
+    2.1.2. First name:
+     
+             "/tns:nachricht.reg.0400003/tns:grunddaten/tns:verfahrensdaten/tns:beteiligung/tns:beteiligter/tns:auswahl_beteiligter/tns:natuerlichePerson/tns:vollerName/tns:vorname"
+
+
+    2.1.3. Last name:
+     
+             "/tns:nachricht.reg.0400003/tns:grunddaten/tns:verfahrensdaten/tns:beteiligung/tns:beteiligter/tns:auswahl_beteiligter/tns:natuerlichePerson/tns:vollerName/tns:nachname"
+
+
+    2.1.4. Birth date ("yyyy-MM-dd"):
+     
+             "/tns:nachricht.reg.0400003/tns:grunddaten/tns:verfahrensdaten/tns:beteiligung/tns:beteiligter/tns:auswahl_beteiligter/tns:natuerlichePerson/tns:geburt/tns:geburtsdatum"
+
+
+    2.1.5. Home address.
+
+	   2.1.5.1. Address type.
+     
+                 "/tns:nachricht.reg.0400003/tns:grunddaten/tns:verfahrensdaten/tns:beteiligung/tns:beteiligter/tns:auswahl_beteiligter/tns:natuerlichePerson/tns:anschrift/tns:anschriftstyp/code"
+
+
+	   2.1.5.2. City name.
+     
+                 "/tns:nachricht.reg.0400003/tns:grunddaten/tns:verfahrensdaten/tns:beteiligung/tns:beteiligter/tns:auswahl_beteiligter/tns:natuerlichePerson/tns:anschrift/tns:ort"
+
+
+
+3. Registration date of company ("Statutes date")
+   (i.e. date of registration of the company in the German Trade Register):
+
+  3.1. Formatted date ("yyyy-MM-dd"):
+
+         "/tns:nachricht.reg.0400003/tns:fachdatenRegister/tns:basisdatenRegister/tns:satzungsdatum/tns:aktuellesSatzungsdatum"
+
+
+  3.2. Unformatted date (i.e. free text):
+
+         "/tns:nachricht.reg.0400003/tns:fachdatenRegister/tns:basisdatenRegister/tns:satzungsdatum/tns:satzungsdatumFreitext"
+
+
+
+4. The name of company (legal entity):
+
+     "/tns:nachricht.reg.0400003/tns:fachdatenRegister/tns:basisdatenRegister/tns:rechtstraeger/tns:bezeichnung/tns:bezeichnung.aktuell"
+
+
+
+5. The type of Legal Form:
+
+     "/tns:nachricht.reg.0400003/tns:fachdatenRegister/tns:basisdatenRegister/tns:rechtstraeger/tns:angabenZurRechtsform/tns:rechtsform/code"
+
+
+
+6. The name of city where the main office of the company is located:
+
+     "/tns:nachricht.reg.0400003/tns:fachdatenRegister/tns:basisdatenRegister/tns:rechtstraeger/tns:sitz/tns:ort"
+
+
+
+7. Postal address of the main office of the company.
+  
+  7.1. Type of postal address:
+
+         "/tns:nachricht.reg.0400003/tns:fachdatenRegister/tns:basisdatenRegister/tns:rechtstraeger/tns:anschrift/tns:anschriftstyp/code"
+
+
+  7.2. Street name:
+
+	     "/tns:nachricht.reg.0400003/tns:fachdatenRegister/tns:basisdatenRegister/tns:rechtstraeger/tns:anschrift/tns:strasse"
+
+
+  7.3. House number:
+
+	     "/tns:nachricht.reg.0400003/tns:fachdatenRegister/tns:basisdatenRegister/tns:rechtstraeger/tns:anschrift/tns:hausnummer"
+
+
+  7.4. Postal Code (PLZ):
+
+	     "/tns:nachricht.reg.0400003/tns:fachdatenRegister/tns:basisdatenRegister/tns:rechtstraeger/tns:anschrift/tns:postleitzahl"
+
+
+  7.5. City name:
+
+	     "/tns:nachricht.reg.0400003/tns:fachdatenRegister/tns:basisdatenRegister/tns:rechtstraeger/tns:anschrift/tns:ort"
+
+
+  7.6. Country name (may absent in XML document):
+
+         "/tns:nachricht.reg.0400003/tns:fachdatenRegister/tns:basisdatenRegister/tns:rechtstraeger/tns:anschrift/tns:staat/code"
+
+
+
+8. Type of represenatation ("allgemeineVertretungsregelung") of company:
+
+     "/tns:nachricht.reg.0400003/tns:fachdatenRegister/tns:basisdatenRegister/tns:vertretung/tns:allgemeineVertretungsregelung/tns:auswahl_vertretungsbefugnis/tns:vertretungsbefugnis/code"
+
+
+
+9. List of "authorized representatives" (i.e. list of persons) of company.
+   I.e. list of nodes with the following name,
+   where each node represents an individual person,
+   who may represent this company at discussions with other companies:
+
+      "/tns:nachricht.reg.0400003/tns:fachdatenRegister/tns:basisdatenRegister/tns:vertretung/tns:vertretungsberechtigte"
+
+
+  9.1. Reference to person 
+       from "/tns:nachricht.reg.0400003/tns:grunddaten/tns:verfahrensdaten/tns:beteiligung/tns:rolle/tns:rollennummer"
+       (it is numeric value):
+
+         "/tns:nachricht.reg.0400003/tns:fachdatenRegister/tns:basisdatenRegister/tns:vertretung/tns:vertretungsberechtigte/tns:ref.rollennummer"
+
+
+  9.2. The type of powers that current person has at current company
+       (i.e. "Special representation arrangement")
+       ( Note 1: At least one of keys below should be filled.
+	     Note 2: There are cases when all 3 keys below are filled.
+       ):
+
+
+    9.2.1. Power of representation - Variant 1
+	       (Free text):
+
+             "/tns:nachricht.reg.0400003/tns:fachdatenRegister/tns:basisdatenRegister/tns:vertretung/tns:vertretungsberechtigte/tns:besondereVertretungsregelung/tns:auswahl_vertretungsbefugnis/tns:vertretungsbefugnisFreitext"
+
+
+    9.2.2. Power of representation - Variant 2
+	       (Special code value according to special code list from one of outdated laws)
+	       ("Selection exemption from Section 181 of the German Civil Code (BGB)"):
+
+	         "/tns:nachricht.reg.0400003/tns:fachdatenRegister/tns:basisdatenRegister/tns:vertretung/tns:vertretungsberechtigte/tns:besondereVertretungsregelung/tns:auswahl_befreiungVon181BGB/tns:befreiungVon181BGB/code"
+
+
+	9.2.3. Power of representation - Variant 3
+	       (Special code value according to special code list from new law):
+
+             "/tns:nachricht.reg.0400003/tns:fachdatenRegister/tns:basisdatenRegister/tns:vertretung/tns:vertretungsberechtigte/tns:besondereVertretungsregelung/tns:auswahl_vertretungsbefugnis/tns:vertretungsbefugnis/code"
+
+
+
+10. Share capital of company (for GmbH):
+
+  10.1. Total amount of money:
+
+         "/tns:nachricht.reg.0400003/tns:fachdatenRegister/tns:auswahl_zusatzangaben/tns:kapitalgesellschaft/tns:zusatzGmbH/tns:stammkapital/tns:zahl"
+
+
+  10.2. Currency code - Variant 1
+        (outdated currency, e.g. "DEM"):
+
+         "/tns:nachricht.reg.0400003/tns:fachdatenRegister/tns:auswahl_zusatzangaben/tns:kapitalgesellschaft/tns:zusatzGmbH/tns:stammkapital/tns:auswahl_waehrung/tns:historischeWaehrung"
+
+
+  10.3. Currency code - Variant 2
+        (actual currency, e.g. "EUR"):
+
+         "/tns:nachricht.reg.0400003/tns:fachdatenRegister/tns:auswahl_zusatzangaben/tns:kapitalgesellschaft/tns:zusatzGmbH/tns:stammkapital/tns:auswahl_waehrung/tns:waehrung/code"
+
+
+
+11. Share capital of company (for AG):
+
+  11.1. Total amount of money:
+
+         "/tns:nachricht.reg.0400003/tns:fachdatenRegister/tns:auswahl_zusatzangaben/tns:kapitalgesellschaft/tns:zusatzAktiengesellschaft/tns:grundkapital/tns:hoehe/tns:zahl/"
+
+
+  11.2. Currency code
+        (actual currency, e.g. "EUR"):
+
+         "/tns:nachricht.reg.0400003/tns:fachdatenRegister/tns:auswahl_zusatzangaben/tns:kapitalgesellschaft/tns:zusatzAktiengesellschaft/tns:grundkapital/tns:hoehe/tns:auswahl_waehrung/tns:waehrung/code"
+
+
+
+12. Branch of company:
+
+     "/tns:nachricht.reg.0400003/tns:fachdatenRegister/tns:basisdatenRegister/tns:gegenstand"

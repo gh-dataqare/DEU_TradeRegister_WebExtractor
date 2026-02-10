@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{014b151f-e2ba-44f7-ac20-bf5232207f4c}</ProjectGuid>
+    <RootNamespace>DEUTradeRegisterConverter</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>T:\Projects22\Bin\Debug\</OutDir>
+    <IntDir>T:\Projects22\Obj\Debug\qlibraries\BDE\DEU_TradeRegister_Converter\</IntDir>
+    <TargetName>$(ProjectName)_D</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>T:\Projects22\Bin64\Debug\</OutDir>
+    <IntDir>T:\Projects22\Obj64\Debug\qlibraries\BDE\DEU_TradeRegister_Converter\</IntDir>
+    <TargetName>$(ProjectName)_D</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>T:\Projects22\Bin64\Release\</OutDir>
+    <IntDir>T:\Projects22\Obj64\Release\qlibraries\BDE\DEU_TradeRegister_Converter\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>T:\Projects22\Bin\Release\</OutDir>
+    <IntDir>T:\Projects22\Obj\Release\qlibraries\BDE\DEU_TradeRegister_Converter\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>Default</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>T:\Projects22\Source\FLX\ENV;T:\Projects22\Source\FLX\GP;T:\Projects22\Source\FLX\IO;T:\Projects22\Source\FLX\LCL;T:\Projects22\Source\ACS\Common;T:\Projects22\Source\ACS\RLL;T:\Projects22\Source\APX\CAP;T:\Projects22\Source\ACS\AehnlicheNamen3;T:\Projects22\Source\FLX\pugixml</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <SupportJustMyCode>false</SupportJustMyCode>
+      <ExceptionHandling>Async</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>T:\Projects22\Source\FLX\ENV;T:\Projects22\Source\FLX\GP;T:\Projects22\Source\FLX\IO;T:\Projects22\Source\FLX\LCL;T:\Projects22\Source\ACS\Common;T:\Projects22\Source\ACS\RLL;T:\Projects22\Source\APX\CAP;T:\Projects22\Source\ACS\AehnlicheNamen3;T:\Projects22\Source\FLX\pugixml</AdditionalIncludeDirectories>
+      <ExceptionHandling>Async</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>Default</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>T:\Projects22\Source\FLX\ENV;T:\Projects22\Source\FLX\GP;T:\Projects22\Source\FLX\IO;T:\Projects22\Source\FLX\LCL;T:\Projects22\Source\ACS\Common;T:\Projects22\Source\ACS\RLL;T:\Projects22\Source\APX\CAP;T:\Projects22\Source\ACS\AehnlicheNamen3;T:\Projects22\Source\FLX\pugixml</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <SupportJustMyCode>false</SupportJustMyCode>
+      <ExceptionHandling>Async</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>T:\Projects22\Source\FLX\ENV;T:\Projects22\Source\FLX\GP;T:\Projects22\Source\FLX\IO;T:\Projects22\Source\FLX\LCL;T:\Projects22\Source\ACS\Common;T:\Projects22\Source\ACS\RLL;T:\Projects22\Source\APX\CAP;T:\Projects22\Source\ACS\AehnlicheNamen3;T:\Projects22\Source\FLX\pugixml</AdditionalIncludeDirectories>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="DEU_TradeRegister_Converter.cpp" />
+    <ClCompile Include="TestPugiXML.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\ACS\AehnlicheNamen3\AehnlicheNamen3.vcxproj">
+      <Project>{17f9f1c0-514e-4b8c-85a8-dbe11c47a51f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\ACS\Common\Common.vcxproj">
+      <Project>{7a9297a4-2256-4192-8e4f-85c806e7aa53}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\ACS\RLL\RLL.vcxproj">
+      <Project>{69d58300-edd3-4d52-a7d7-90676aa517f5}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\APX\CAP\CAP.vcxproj">
+      <Project>{c82d3ffb-ff55-4a01-8836-9d154b56deba}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\FLX\ENV\ENV.vcxproj">
+      <Project>{11152252-a96f-4311-a89c-43da13ac252c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\FLX\GP\GP.vcxproj">
+      <Project>{e6315f49-c60a-4e94-a6d0-dd47bd7e8b41}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\FLX\IO\IO.vcxproj">
+      <Project>{4b6a156c-20f4-422f-9324-597277ccaeec}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\FLX\LCL\LCL.vcxproj">
+      <Project>{fbb11027-8efd-46df-ba5d-97e39d228250}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\FLX\pugixml\pugixml.vcxproj">
+      <Project>{0cec646f-a0ab-46cc-bafe-16fb9df9daef}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TestPugiXML.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Description.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
