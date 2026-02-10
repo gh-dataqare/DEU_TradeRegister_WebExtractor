@@ -1,0 +1,53 @@
+# Build results
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa]rtefacts/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio cache/options directory
+.vs/
+
+# NuGet Packages
+*.nupkg
+packages/
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Logs and output
+Logs/
+*.log
+
+# Downloaded files and browser cache
+BrowserDownload/
+Downloaded Files/
+
+# Output files
+TradeRegister_Output.csv
+TradeRegister_Output_*.csv
+
+# Environment files (credentials)
+.env
+
+# Archive
+.Archive/
+
+# Old config files
+*.old
+
+# HTML test files
+*.html
+
+# Settings file (may contain sensitive paths)
+DEU_TradeRegister_WebExtractor_Settings.xml
